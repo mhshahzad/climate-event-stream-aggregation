@@ -1,0 +1,22 @@
+{
+  "name": "candlestick-http-api",
+  "root": "src/packages/candlestick-http-api",
+  "targets": {
+    "serve": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "npm run dev",
+        "cwd": "src/packages/candlestick-http-api"
+      }
+    },
+    "build": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "npm run build",
+        "cwd": "src/packages/candlestick-http-api"
+      }
+    }
+  },
+  "tags": []
+}
+
