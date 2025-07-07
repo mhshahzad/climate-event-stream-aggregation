@@ -1,0 +1,34 @@
+{
+  "$schema": "./node_modules/nx/schemas/nx-schema.json",
+  "targetDefaults": {
+    "test": {
+      "cache": true
+    }
+  },
+  "defaultBase": "master",
+  "plugins": [
+    {
+      "plugin": "@nx/webpack/plugin",
+      "options": {
+        "buildTargetName": "build",
+        "serveTargetName": "serve",
+        "previewTargetName": "preview",
+        "serveStaticTargetName": "serve-static"
+      }
+    }
+  ],
+  "projects": {
+    "ui": {
+      "tags": [],
+      "root": "src/packages/ui"
+    },
+    "candlestick-http-api": {
+      "tags": [],
+      "root": "src/packages/candlestick-http-api"
+    },
+    "stream-simulator": {
+      "tags": [],
+      "root": "src/packages/stream-simulator"
+    }
+  }
+}

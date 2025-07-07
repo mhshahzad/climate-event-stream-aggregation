@@ -1,0 +1,22 @@
+{
+  "name": "ui",
+  "root": "src/packages/ui",
+  "targets": {
+    "serve": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "npm run dev",
+        "cwd": "src/packages/ui"
+      }
+    },
+    "build": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "npm run build",
+        "cwd": "src/packages/ui"
+      }
+    }
+  },
+  "tags": []
+}
+

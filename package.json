@@ -1,0 +1,24 @@
+{
+  "name": "climateeventstreamaggregation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start:ui": "nx run ui:serve",
+    "start:api": "nx run candlestick-http-api:serve",
+    "start:sim": "nx run stream-simulator:serve",
+    "start:all": "nx run-many --target=serve --projects=stream-simulator,candlestick-http-api,ui --parallel"
+  },
+  "workspaces": ["src/packages/*"],
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@nx/web": "18.3.3",
+    "@nx/webpack": "18.3.3",
+    "nx": "18.3.3",
+    "webpack-cli": "^5.1.4"
+  },
+  "nx": {},
+  "dependencies": {}
+}
